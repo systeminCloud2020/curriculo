@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+body{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    'cabecalho'
+    'corpo';
+}
+
+header#cabecalho{
+    grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+header#cabecalho img#foto{
+    position: relative;
+    width: 13%;
+    height: auto;
+    margin: auto;
+    border-radius: 100%;
+    border: 7px solid rgba(0, 0, 0, 0.5);
+}
+
+header#cabecalho div.cabecalho{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+header#cabecalho figure{
+    position: relative;
+    width: 450px;
+    margin: 2%;
+    text-align: center;
+}
+
+header#cabecalho figure img{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 1%;
+    display: inline-block;
+    border-radius: 100%;
+    transition: 0.2s;
+}
+
+header#cabecalho h1{
+    font: bold 25pt Arial;
+}
+
+header#cabecalho a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font: bold 13pt Arial;
+}
+
+header#cabecalho a:hover{
+    text-decoration: underline;
+}
+
+header#cabecalho p{
+    font: bold 13pt Arial;
+}
+
+header#cabecalho figure img:hover{
+    padding-bottom: 2%;
+    margin-top: -2%;
+}
+
+section#corpo{
+    grid-area: corpo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+section#corpo figure{
+    position: relative;
+    width: 13%;
+    height: auto;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+section#corpo figure:hover{
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+section#corpo figure img{
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+section#corpo figure figcaption{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    text-align: center;
+}
+
+section#corpo figure a{
+    color: rgba(0, 0, 0, 0.7);
+    font: 700 18pt Arial;
+    text-decoration: none;
+}

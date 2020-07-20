@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 1000px) {
+    div.menu_lateral {
+        display: none;
+    }
+
+    div#curriculo {
+        display: block;
+        width: 76%;
+        height: auto;
+        margin: auto;
+        padding-left: 4%;
+    }
+
+    p.data {
+        position: relative;
+        width: 70%;
+        text-align: right;
+        margin: 0 0 0 auto;
+        padding-top: 1%;
+        padding-bottom: 5%;
+        font-size: 9pt;
+        color: rgba(75, 0, 0, 0.7);
+    }
+
+    div#curriculo div.curriculo-habilidades figure {
+        margin: 1% 10%;
+    }
+}
